@@ -1,0 +1,19 @@
+# Secrets and environment configuration
+.env
+*.env.local
+
+# Persistent browser cache and session cookies
+browser-profile/
+
+# State files
+assignments.json
+dashboard_snapshot.txt
+
+# Python environment & cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS-specific
+.DS_Store
