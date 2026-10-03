@@ -1,9 +1,8 @@
 #!/bin/bash
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 
-# Activate the venv and execute monitor with caffeinate
-source .venv/bin/activate
-caffeinate -dimsu python monitor.py
+# Execute the local venv interpreter with caffeinate
+caffeinate -dimsu ./.venv/bin/python ./monitor.py
 
 # Keep window open if the script ever exits/crashes so you can see why
 echo ""
